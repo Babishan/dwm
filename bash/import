@@ -1,15 +1,22 @@
-# apt shortcuts
-alias update='sudo apt update && sudo apt upgrade'
-alias add='sudo apt install'
-alias remove='sudo apt remove'
-alias search='sudo apt search'
-alias autoremove='sudo apt autoremove'
+# Pacman shortcuts
+alias update='sudo pacman -Syuu'
+alias add='sudo pacman -S'
+alias remove='sudo pacman -R'
+alias search='sudo pacman -Ss'
+alias autoremove='sudo pacman -Rcns $(pacman -Qdtq)'
+
+# Yay shortcuts
+alias yupdate='yay -Syuu'
+alias yadd='yay -S'
+alias yremove='yay -R'
+alias ysearch='yay -Ss'
+alias yautoremove='yay -Rcns $(yay -Qdtq)'
 
 # Customization shortcuts
-alias vii3='vi /home/thashan/.config/i3/config'
-alias vilxdm='sudo vi /etc/lxdm/lxdm.conf'
 alias vibash='vi /home/thashan/.bashrc'
 alias findit='sudo find / -name '
 alias suckless='cd /home/thashan/Suckless'
 alias dwm='suckless;cd dwm'
-alias i3status='i3status -c /home/thashan/Suckless/config'
+
+#fstrim
+alias fstrim='sudo fstrim -Av'

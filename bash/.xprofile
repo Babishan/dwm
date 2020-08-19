@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# can be symlinked to ~/.xsessionrc ~/.xprofile
 # /etc/X11/xinit/xinitrc
 #
 # global xinitrc file, used by all X sessions started by xinit (startx)
@@ -7,8 +7,8 @@
 # invoke global X session script
 # Statusbar loop
 /home/thashan/Suckless/bash/scripts/status.sh &
-
+# feh --bg-scale /path/to/image 
 # Autostart section
 
-
-exec dwm
+# can be symlinked to ~/.xinitrc removing below comment 
+#exec dwm
