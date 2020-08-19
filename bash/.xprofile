@@ -7,7 +7,7 @@
 # invoke global X session script
 # Statusbar loop
 /home/thashan/Suckless/bash/scripts/status.sh &
-# feh --bg-scale /path/to/image 
+#feh --bg-scale /home/thashan/Suckless/Arch.jpg
 # Autostart section
 
 # can be symlinked to ~/.xinitrc removing below comment 
