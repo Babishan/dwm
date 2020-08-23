@@ -1,10 +1,11 @@
 #!/bin/bash
+export BAT=$(basename /sys/class/power_supply/BAT*)
 xsetroot -name "Checking for Status"
 while(true)
 do
-	Battery=$( cat /sys/class/power_supply/BAT0/status|grep -Po "^." )
-	Capacity=$( cat /sys/class/power_supply/BAT0/capacity )
-	Level=$( cat /sys/class/power_supply/BAT0/capacity_level )
+	Battery=$( cat /sys/class/power_supply/$BAT/status|grep -Po "^." )
+	Capacity=$( cat /sys/class/power_supply/$BAT/capacity )
+	Level=$( cat /sys/class/power_supply/$BAT/capacity_level )
 	Date=$( date +"%F" )
 	Time=$( date +"%T" )
 	Free=$( free -m |head -2 |tail -1|awk -F ' ' '{print $3}' )
