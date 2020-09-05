@@ -20,3 +20,7 @@ alias dwm='suckless;cd dwm'
 
 #fstrim
 alias fstrim='sudo fstrim -Av'
+
+#[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && source /home/thashan/Suckless/bash/scripts/wifi.sh
+#[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && startx
+
