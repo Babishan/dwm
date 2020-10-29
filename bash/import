@@ -4,6 +4,7 @@ alias add='sudo pacman -S'
 alias remove='sudo pacman -R'
 alias search='sudo pacman -Ss'
 alias autoremove='sudo pacman -Rcns $(pacman -Qdtq)'
+alias keyring='sudo pacman -Sy archlinux-keyring'
 
 # Yay shortcuts
 alias yupdate='yay -Syuu'
@@ -21,6 +22,5 @@ alias dwm='suckless;cd dwm'
 #fstrim
 alias fstrim='sudo fstrim -Av'
 
-#[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && source /home/thashan/Suckless/bash/scripts/wifi.sh
-#[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && startx
-
+#Joplin
+alias joplin='joplin sync && joplin'

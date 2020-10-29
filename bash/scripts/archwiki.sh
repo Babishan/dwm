@@ -1,5 +1,5 @@
 #!/bin/bash
-search=$(echo ''|dmenu);
+search=$(echo 'dwm'|dmenu);
 if [ -z "$search" ]
 then
     exit 1
