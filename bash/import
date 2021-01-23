@@ -5,6 +5,7 @@ alias remove='sudo pacman -R'
 alias search='sudo pacman -Ss'
 alias autoremove='sudo pacman -Rcns $(pacman -Qdtq)'
 alias keyring='sudo pacman -Sy archlinux-keyring'
+alias list='sudo pacman -Q'
 
 # Yay shortcuts
 alias yupdate='yay -Syuu'
@@ -13,11 +14,20 @@ alias yremove='yay -R'
 alias ysearch='yay -Ss'
 alias yautoremove='yay -Rcns $(yay -Qdtq)'
 
+#Flatpak
+alias fsearch='flatpak search'
+alias fadd='flatpak install'
+alias fupdate='flatpak update'
+alias fremove='flatpak uninstall'
+alias fautoremove='flatpak uninstall --unused'
+alias flist='flatpak list'
+
 # Customization shortcuts
 alias vibash='vi /home/thashan/.bashrc'
 alias findit='sudo find / -name '
 alias suckless='cd /home/thashan/Suckless'
 alias dwm='suckless;cd dwm'
+alias up='update && fupdate && yupdate'
 
 #fstrim
 alias fstrim='sudo fstrim -Av'
@@ -25,5 +35,7 @@ alias fstrim='sudo fstrim -Av'
 #[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && source /home/thashan/Suckless/bash/scripts/wifi.sh
 #[ "$TERM" = "linux" ] && [ "$XDG_VTNR" = "1" ] && startx
 
-#Joplin
-alias joplin='joplin sync && joplin'
+#git commands
+alias gitci='git commit -S'
+alias gitpush='git push'
+
