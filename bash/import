@@ -8,11 +8,11 @@ alias keyring='sudo pacman -Sy archlinux-keyring'
 alias list='sudo pacman -Q'
 
 # Yay shortcuts
-alias yupdate='yay -Syuu'
-alias yadd='yay -S'
-alias yremove='yay -R'
-alias ysearch='yay -Ss'
-alias yautoremove='yay -Rcns $(yay -Qdtq)'
+alias yupdate='paru -Syuu'
+alias yadd='paru -S'
+alias yremove='paru -R'
+alias ysearch='paru -Ss'
+alias yautoremove='paru -Rcns $(paru -Qdtq)'
 
 #Flatpak
 alias fsearch='flatpak search'
@@ -38,4 +38,4 @@ alias fstrim='sudo fstrim -Av'
 #git commands
 alias gitci='git commit -S'
 alias gitpush='git push'
-
+alias gitlabp='git push gitlab master'
