@@ -6,6 +6,7 @@ alias search='sudo pacman -Ss'
 alias autoremove='sudo pacman -Rcns $(pacman -Qdtq)'
 alias keyring='sudo pacman -Sy archlinux-keyring'
 alias list='sudo pacman -Q'
+alias mirror='sudo reflector --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # Yay shortcuts
 alias yupdate='paru -Syuu'
@@ -39,3 +40,6 @@ alias fstrim='sudo fstrim -Av'
 alias gitci='git commit -S'
 alias gitpush='git push'
 alias gitlabp='git push gitlab master'
+
+alias ytdlp='yt-dlp -f "bestvideo&#91;ext=mp4]+bestaudio&#91;ext=m4a]/best&#91;ext=mp4]/best"'
+alias ytdlpt='yt-dlp -f 140+137 --merge-output-format mkv'
